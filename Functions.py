@@ -12,6 +12,8 @@ from PIL import Image, ImageDraw, ImageFont
 import textwrap
 from googletrans import Translator
 
+FONT_SIZE = 25
+
 
 class ComicTranslator:
     def __init__(self, path):
@@ -93,7 +95,7 @@ class ComicTranslator:
 
             # Writing Text onto the newly created Image
             d = ImageDraw.Draw(balloon_box)
-            font = ImageFont.truetype("fonts/SF_Arch_Rival.ttf", size=20)
+            font = ImageFont.truetype("fonts/SF_Arch_Rival.ttf", size=FONT_SIZE)
             d.text((10, 10), whole_text.text, fill=(0, 0, 0), align="left", font=font)
 
             # Converting Image to BGR format suited for Opencv and constructing Borders

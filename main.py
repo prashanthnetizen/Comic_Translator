@@ -45,7 +45,7 @@ logo = """
 """
 
 if __name__ == '__main__':
-    comic = ComicTranslator('images/moira-1.jpg')
+    comic = ComicTranslator('images/WORK/fra/moira-1.jpg')
     menu = ConsoleMenu(logo, "A Project By Prasanth, Manish and Ratan")
     function0 = FunctionItem("Show the Image Loaded", show_image, ["Show", comic.image])
     function1 = FunctionItem("Get Text Bubble Marked Image", comic.mark_text_bubbles, [])
